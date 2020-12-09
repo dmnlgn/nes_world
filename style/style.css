@@ -1,0 +1,52 @@
+/* nes_world */
+
+@font-face {
+    font-family: VT323;
+    src: url(../fonts/VT323-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 14px;
+    font-family: VT323, "Bahnschrift", "Arial Narrow";
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+    grid-template-areas:
+    "header_nes"
+    "main_nes"
+    "footer_nes";
+}
+
+.wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* header */
+#header{
+    grid-area: header_nes;
+    background-color: blue;
+    border-bottom: 10px solid #000000;
+}
+
+
+/* main */
+#main{
+    grid-area: main_nes;
+}
+
+/* footer */
+#footer{
+    grid-area: footer_nes;
+}
