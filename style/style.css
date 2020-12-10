@@ -11,6 +11,7 @@
 }
 
 a{
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -44,15 +45,25 @@ body{
 #header{
     grid-area: header_nes;
     border-bottom: 10px solid #000000;
+    background-color: #c10000;
 }
+
+.head{
+    padding: 20px;
+}
+
 .logo{
     display: grid;
 }
 
 .logo > a{
-    font-size: 6em;
-    padding: 25px;
-    place-self: center;
+    color: #ffffff!important;
+    font-size: calc(15px + (90 - 14) * ((100vw - 150px) / (1600 - 300)));
+   /* place-self: center; */
+}
+
+#mainMenu > ul > li > a{
+    color: #ffffff!important;
 }
 
 .menu{
@@ -64,6 +75,31 @@ body{
     display: grid;
     grid-auto-flow: column;
     justify-items: center;
+}
+
+.navbar{
+    text-transform: uppercase;
+    padding: 0!important;
+}
+
+.navbar-custom {
+    border: 3px dashed #ffffff !important;
+}
+
+.invert { filter: invert(100%); }
+
+.dropdown-menu{
+    padding:0!important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #c10000;
+}
+
+button:focus {
+    outline: 0!important;
 }
 
 /* main */
@@ -90,4 +126,10 @@ body{
     font-size: 1em;
     place-self: center;
     margin-bottom: 0!important;
+}
+
+@media (min-width: 768px) {
+    .ml-md-2:first-child {
+        margin-left: 0!important;
+    }
 }
