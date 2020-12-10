@@ -63,6 +63,7 @@ body{
 }
 
 #mainMenu > ul > li > a{
+    font-size: calc(1rem + (20 - 14) * ((100vw - 150px) / (1600 - 300)));
     color: #ffffff!important;
 }
 
@@ -98,6 +99,17 @@ body{
     background-color: #c10000;
 }
 
+#search-form > .form-control, .btn-light{
+    font-size: 0.8rem!important;
+    border: 5px solid #000000!important;
+    height: auto!important;
+}
+
+.form-inline{
+    justify-content: flex-end;
+}
+
+
 button:focus {
     outline: 0!important;
 }
@@ -110,6 +122,14 @@ button:focus {
 .figcaption-new{
     justify-items: center;
     display: grid;
+}
+
+.figcaption-new > a{
+    font-size: calc(0.8rem + (30 - 14) * ((100vw - 150px) / (1600 - 300)));
+}
+
+.img-fluid{
+    border: 10px solid #000;
 }
 
 /* footer */
@@ -131,5 +151,11 @@ button:focus {
 @media (min-width: 768px) {
     .ml-md-2:first-child {
         margin-left: 0!important;
+    }
+}
+
+@media (max-width: 1000px){
+    #search-form{
+        display: none;
     }
 }
