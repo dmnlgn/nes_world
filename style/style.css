@@ -63,7 +63,7 @@ body{
 }
 
 #mainMenu > ul > li > a{
-    font-size: calc(1rem + (20 - 14) * ((100vw - 150px) / (1600 - 300)));
+    font-size: calc(1rem + (18 - 14) * ((100vw - 150px) / (1600 - 300)));
     color: #ffffff!important;
 }
 
@@ -90,7 +90,7 @@ body{
 .invert { filter: invert(100%); }
 
 .dropdown-menu{
-    padding:0!important;
+    padding:0;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -100,15 +100,44 @@ body{
 }
 
 #search-form > .form-control, .btn-light{
-    font-size: 0.8rem!important;
-    border: 5px solid #000000!important;
     height: auto!important;
 }
 
-.form-inline{
-    justify-content: flex-end;
+.dropdown-custom{
+    padding-left: .5rem;
 }
 
+.dropdown-menu-user{
+    margin: 0;
+    padding:5px;
+    right:0;
+    left: auto;
+    min-width: 16rem;
+}
+
+.dropdown-menu.dropdown-menu-user{
+    left:-1;
+}
+
+.right-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-custom{
+    border: 10px solid #000000!important;
+}
+
+.btn-user{
+    color: #212529;
+    background-color: #f8f9fa;
+    border: 10px solid #000000!important;
+}
+
+.btn-user-drop{
+    width:100%;
+    text-transform: uppercase;
+}
 
 button:focus {
     outline: 0!important;
@@ -148,14 +177,14 @@ button:focus {
     margin-bottom: 0!important;
 }
 
-@media (min-width: 768px) {
-    .ml-md-2:first-child {
-        margin-left: 0!important;
+@media (min-width: 992px) {
+    .ml-md-2, .mx-md-2 {
+        margin-left: .5rem!important;
     }
-}
 
-@media (max-width: 1000px){
-    #search-form{
-        display: none;
+}
+@media (min-width: 992px){
+    .navbar-expand-xl .navbar-collapse {
+        justify-content: space-between;
     }
 }
