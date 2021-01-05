@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nes_world</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f6c930d9e6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style/style.css"/>
+</head>
+<body>
+<header id="header">
+    <section class="head container">
+        <div class="logo">
+            <a href="index.html">NES_WORLD</a>
+        </div>
+        <nav class="navbar navbar-light navbar-expand-xl">
+            <button class="navbar-toggler navbar-custom" type="button" data-toggle="collapse" data-target="#mainMenu" aria-expanded="true">
+                <span class="navbar-toggler-icon invert"/>
+            </button>
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item ml-md-2 active"><a class="nav-link">START</a></li>
+                    <li class="nav-item ml-md-2 dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">GAMES</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a class="nav-link">Action</a></li>
+                            <li class="dropdown-item"><a class="nav-link">Adventure</a></li>
+                            <li class="dropdown-item"><a class="nav-link">Racing</a></li>
+                            <li class="dropdown-item"><a class="nav-link">Arcade</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ml-md-2"><a class="nav-link">PLATFORMS</a></li>
+                    <li class="nav-item ml-md-2"><a class="nav-link">TOP GAMES</a></li>
+                </ul>
+                <form class="form-inline ml-auto" id="search-form">
+                    <input class="form-control btn-custom" type="search" placeholder="Search">
+                    <buttton type="submit" class="btn btn-light btn-custom ml-2">Search</buttton>
+                </form>
+                <div class="dropdown ml-2">
+                    <button class="btn btn-user btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown"><i class="fas fa-user"></i></button>
+                    <form class="dropdown-menu dropdown-menu-right dropdown-menu-user">
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Hasło:</label>
+                            <input type="password" class="form-control" id="haslo" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-user-drop btn-light">Zaloguj się</button>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="register.html">Załóż konto</a>
+                        <a class="dropdown-item" href="#">Przypomnij hasło</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>
+<main id="main" class="container">
+    <div class="register-user">
+        <h1>Rejestracja</h1>
+        <p>Załóż konto wypełniając poniższy formularz</p>
+    </div>
+        <form>
+            <div class="row mt-2">
+                <div class="form-group col-sm-5">
+                    <label>LOGIN:</label>
+                    <input type="email" class="form-control" placeholder="Login">
+                </div>
+                <div class="form-group col-sm-5">
+                    <label>PASSWORD:</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="form-group col-sm-5">
+                    <label>NAME:</label>
+                    <input type="name" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group col-sm-5">
+                    <label>SURNAME:</label>
+                    <input type="surname" class="form-control" placeholder="Surname">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="form-group col-sm-10">
+                    <label>EMAIL:</label>
+                    <input type="surname" class="form-control" placeholder="Email">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="form-group col-sm-5">
+                    <label>DATE OF BIRTH</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="form-group col-sm-5">
+                    <label>PHONE:</label>
+                    <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="XXX-XXX-XXX">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="form-group col-sm-5">
+                    <label>COUNTRY:</label>
+                    <select class="form-control form-control-sm">
+                        <option>default select</option>
+                        <option>Afghanistan</option>
+                        <option>Albania</option>
+                        <option>Algeria</option>
+                        <option>Andorra</option>
+                        <option>Angola</option>
+                        <option>Antigua and Barbuda</option>
+                        <option>Argentina</option>
+                        <option>Armenia</option>
+                        <option>Australia</option>
+                        <option>Austria</option>
+                        <option>Bangladesh</option>
+                        <option>Barbados</option>
+                        <option>Bavaria*</option>
+                        <option>Belarus</option>
+                        <option>Belgium</option>
+                        <option>Belize</option>
+                        <option>Benin (Dahomey)</option>
+                        <option>Bolivia</option>
+                        <option>Bosnia and Herzegovina</option>
+                        <option>Botswana</option>
+                        <option>Brazil</option>
+                        <option>Brunei</option>
+                        <option>Brunswick and Lüneburg</option>
+                        <option>Bulgaria</option>
+                        <option>Canada</option>
+                        <option>Cayman Islands, The</option>
+                        <option>Central African Republic</option>
+                        <option>Central American Federation*</option>
+                        <option>Chad</option>
+                        <option>Chile</option>
+                        <option>China</option>
+                        <option>Colombia</option>
+                        <option>Comoros</option>
+                        <option>Congo Free State, The</option>
+                        <option>Costa Rica</option>
+                        <option>Cote d’Ivoire (Ivory Coast)</option>
+                        <option>Small select</option>
+                        <option>Democratic Republic of the Congo</option>
+                        <option>El Salvador</option>
+                        <option>Equatorial Guinea</option>
+                        <option>Eritrea</option>
+                        <option>Estonia</option>
+                        <option>Eswatini</option>
+                        <option>Ethiopia</option>
+                        <option>Fiji</option>
+                        <option>Finland</option>
+                        <option>France</option>
+                        <option>Gambia</option>
+                        <option>Georgia</option>
+                        <option>Germany</option>
+                        <option>Ghana</option>
+                        <option>Greece</option>
+                        <option>Grenada</option>
+                        <option>Iceland</option>
+                        <option>India</option>
+                        <option>Indonesia</option>
+                        <option>Iran</option>
+                        <option>Iraq</option>
+                        <option>Ireland</option>
+                        <option>Israel</option>
+                        <option>Jamaica</option>
+                        <option>Japan</option>
+                        <option>Jordan</option>
+                        <option>Kenya</option>
+                        <option>Kingdom of Serbia/Yugoslavia*</option>
+                        <option>Kiribati</option>
+                        <option>Korea</option>
+                        <option>Kosovo</option>
+                        <option>Kuwait</option>
+                        <option>Lesotho</option>
+                        <option>Lew Chew (Loochoo)*</option>
+                        <option>Liberia</option>
+                        <option>Libya</option>
+                        <option>Liechten</option>
+                        <option>Madagascar</option>
+                        <option>Malawi</option>
+                        <option>Malaysia</option>
+                        <option>Maldives</option>
+                        <option>Mali</option>
+                        <option>Malta</option>
+                        <option>Namibia</option>
+                        <option>Nassau*</option>
+                        <option>Nauru</option>
+                        <option>Nepal</option>
+                        <option>Netherlands</option>
+                        <option>New Zealand</option>
+                        <option>Nicaragua</option>
+                        <option>Niger</option>
+                        <option>Pakistan</option>
+                        <option>Palau</option>
+                        <option>Panama</option>
+                        <option>Papal States*</option>
+                        <option>Papua New Guinea</option>
+                        <option>Paraguay</option>
+                        <option>Peru</option>
+                        <option>Philippines</option>
+                        <option>Piedmont-Sardinia*</option>
+                        <option>Poland</option>
+                        <option>Portugal</option>
+                        <option>Republic of Genoa*</option>
+                        <option>Republic of Korea (South Korea)</option>
+                        <option>Republic of the Congo</option>
+                        <option>Romania</option>
+                        <option>Russia</option>
+                        <option>Saint Lucia</option>
+                        <option>Saint Vincent and the Grenadines</option>
+                        <option>Samoa</option>
+                        <option>San Marino</option>
+                        <option>Sao Tome and Principe</option>
+                        <option>Saudi Arabia</option>
+                        <option>Schaumburg-Lippe*</option>
+                        <option>Senegal</option>
+                        <option>Serbia</option>
+                        <option>Seychelles</option>
+                        <option>Sierra Leone</option>
+                        <option>Singapore</option>
+                        <option>Timor-Leste</option>
+                        <option>Togo</option>
+                        <option>Tonga</option>
+                        <option>Trinidad and Tobago</option>
+                        <option>Tunisia</option>
+                        <option>Uganda</option>
+                        <option>Ukraine</option>
+                        <option>Union of Soviet Socialist Republics*</option>
+                        <option>United Arab Emirates</option>
+                        <option>United Kingdom</option>
+                        <option>Uruguay</option>
+                        <option>Uzbekistan</option>
+                        <option>Vanuatu</option>
+                        <option>Venezuela</option>
+                        <option>Vietnam</option>
+                        <option>Zambia</option>
+                        <option>Zimbabwe</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="form-group col-sm-5">
+                    <label>SEX:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            MAN
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            WOMAN
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="form-group col-sm-5">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label class="form-check-label">I agree to the terms of service</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+</main>
+<footer id="footer">
+    <p>© dmnlgn</p>
+</footer>
+</body>
+</html>
