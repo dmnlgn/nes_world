@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nes_world</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f6c930d9e6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<header id="header">
+    <section class="head container">
+        <div class="logo">
+            <a href="index.html">NES_WORLD</a>
+        </div>
+        <nav class="navbar navbar-light navbar-expand-xl">
+            <button class="navbar-toggler navbar-custom" type="button" data-toggle="collapse" data-target="#mainMenu" aria-expanded="true">
+                <span class="navbar-toggler-icon invert"/>
+            </button>
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item ml-md-2 active"><a href="index.html" class="nav-link">START</a></li>
+                    <li class="nav-item ml-md-2 dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">GAMES</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a class="nav-link">Action</a></li>
+                            <li class="dropdown-item"><a class="nav-link">Adventure</a></li>
+                            <li class="dropdown-item"><a class="nav-link">Racing</a></li>
+                            <li class="dropdown-item"><a class="nav-link">Arcade</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ml-md-2"><a class="nav-link" href="platforms.html">RETRO CONSOLES</a></li>
+                    <li class="nav-item ml-md-2"><a class="nav-link">TOP GAMES</a></li>
+                </ul>
+                <form class="form-inline ml-auto" id="search-form">
+                    <input class="form-control search-fix" type="search" placeholder="Search">
+                    <buttton type="submit" class="btn btn-custom">
+                        <i class="fas fa-search text-white" aria-hidden="true"></i>
+                    </buttton>
+                </form>
+                <div class="dropdown ml-2">
+                    <button class="btn btn-user btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown"><i class="fas fa-user"></i></button>
+                    <form class="dropdown-menu dropdown-menu-right dropdown-menu-user">
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Hasło:</label>
+                            <input type="password" class="form-control" id="haslo" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-user-drop btn-light">Zaloguj się</button>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="register.html">Załóż konto</a>
+                        <a class="dropdown-item" href="#">Przypomnij hasło</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>
+<main id="main" class="container">
+    <div class="row">
+        <div class="col-sm-10">
+            <ul class="nav nav-tabs nav-tabs-custom" id="PlatformsTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" href="#supersnes" data-toggle="tab">Super NES Classic</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#segagenesis" data-toggle="tab">SEGA Genesis</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#playstation" data-toggle="tab">PlayStation Classic</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="PlatformsTabDeep">
+                <div class="tab-pane fade show active" id="supersnes">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link show active" href="#supersnes_about" data-toggle="tab">About</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="#supersnes_gallery" data-toggle="tab">Gallery</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="#supersnes_price" data-toggle="tab">Price</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="segagenesis">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="#segagenesis_about" data-toggle="tab">About</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="#segagenesis_gallery" data-toggle="tab">Gallery</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="#segagenesis_price" data-toggle="tab">Price</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="playstation">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="#playstation_about" data-toggle="tab">About</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="#playstation_gallery" data-toggle="tab">Gallery</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="#playstation_price" data-toggle="tab">Price</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content" id="PlatformsContent">
+                <div class="tab-pane fade show active" id="supersnes_about">
+                    <h2>Super NES Classic</h2>
+                    <p>Super Nintendo Entertainment System: Super NES Classic Edition, known as Nintendo Classic Mini: Super Nintendo Entertainment System in Europe and Australia and the Nintendo Classic Mini: Super Famicom (Japanese: ニンテンドークラシックミニ スーパーファミコン) in Japan, and also colloquially as the SNES Mini or SNES Classic, is a dedicated home video game console released by Nintendo, which emulates the Super Nintendo Entertainment System. The console, a successor to the NES Classic Edition, comes with twenty-one Super NES titles pre-installed, including the first official release of Star Fox 2. It was released in North America and Europe on September 29, 2017.
+                    </p>
+                    <h4>Hardware</h4>
+                    <p>The console is distributed in three variations, featuring the unique design of the original systems released in Japan, North America, and Europe respectively. While the North American release features an appearance based on the straight-angled grey-and-purple design of the Super NES, the Japan and PAL region releases are modelled after the rounded edge Super Famicom/PAL Super NES design as originally released in these regions.</p>
+                </div>
+                <div class="tab-pane fade" id="supersnes_gallery">
+                       <div class="col">
+                           <figure>
+                               <img src="images/nes/5389100_sd.jpg" class="img-fluid">
+                           </figure>
+                       </div>
+                </div>
+                <div class="tab-pane fade" id="supersnes_price">
+                       <table class="table table-striped">
+                           <thead>
+                           <tr>
+                               <th scope="col">#</th>
+                               <th scope="col">Shop</th>
+                               <th scope="col">Price</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                           <tr>
+                               <th scope="row">1</th>
+                               <td>Amazon</td>
+                               <td>299.97$</td>
+                           </tr>
+                           <tr>
+                               <th scope="row">2</th>
+                               <td>eBay</td>
+                               <td>289.50$</td>
+                           </tr>
+                           </tbody>
+                       </table>
+                </div>
+                <div class="tab-pane fade" id="segagenesis_about">
+                    <h2>Sega Genesis</h2>
+                    <p>The Sega Genesis, known as the Mega Drive[b] outside North America, is a 16-bit fourth-generation home video game console developed and sold by Sega. The Genesis was Sega's third console and the successor to the Master System. Sega released it in 1988 in Japan as the Mega Drive, and in 1989 in North America as the Genesis. In 1990, it was distributed as the Mega Drive by Virgin Mastertronic in Europe, Ozisoft in Australasia, and Tec Toy in Brazil. In South Korea, it was distributed by Samsung as the Super Gam*Boy and later the Super Aladdin Boy.
+                    <p>Designed by an R&D team supervised by Hideki Sato and Masami Ishikawa, the Genesis was adapted from Sega's System 16 arcade board, centered on a Motorola 68000 processor as the CPU, a Zilog Z80 as a sound controller, and a video system supporting hardware sprites, tiles, and scrolling. It plays a library of more than 900 games on ROM-based cartridges. Several add-ons were released, including a Power Base Converter to play Master System games. It was released in several different versions, some created by third parties. Sega created two network services to support the Genesis: Sega Meganet and Sega Channel.</p>
+                </div>
+                <div class="tab-pane fade" id="segagenesis_gallery">
+                    <div class="col">
+                        <figure>
+                            <img src="images/nes/5389100_sd.jpg" class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="segagenesis_price">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Shop</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Amazon</td>
+                            <td>299.97$</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>eBay</td>
+                            <td>289.50$</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer id="footer">
+    <p>© dmnlgn</p>
+</footer>
+</body>
+</html>

@@ -118,14 +118,28 @@ body{
     justify-content: space-between;
 }
 
+/* search area */
 .btn-custom{
-    border: 10px solid #000000!important;
+    border: 10px solid #000000;
+    background-color: #000000;
+}
+.btn-custom:hover{
+    background-color: #333;
+}
+
+.search-fix{
+    border: 10px solid #000000;
+    border-right: none;
 }
 
 .btn-user{
     color: #212529;
     background-color: #f8f9fa;
     border: 10px solid #000000!important;
+}
+
+.form-control, .btn{
+    border-radius:0;
 }
 
 .btn-user-drop{
@@ -136,6 +150,11 @@ body{
 button:focus {
     outline: 0!important;
 }
+
+.nav-tabs-custom{
+    text-transform: uppercase;
+}
+
 
 /* main */
 #main{
